@@ -1,0 +1,16 @@
+{% extends 'BASE.html' %}
+{% block content %}
+<div class="container">
+	<section>
+		<h3 class="red-text">{{ POST['title'] }}</h3>
+		<div class="section">
+			{{ POST['text'] | safe }}
+		</div>
+		<br/>
+		<br/>
+	<script>
+	$(document).ready(function(){
+	});
+	</script>
+</div>
+{% endblock %}

@@ -1,0 +1,166 @@
+{% extends 'BASE.html' %}
+{% block content %}
+<div class="container">
+	<div class="row">
+		<div class="col s12">
+			<ul class="red darken-2 tabs">
+				<li class="tab col s3"><a class="white-text" href="#activity">项目活动</a></li>
+				<li class="tab col s3"><a class="white-text" href="#facility">校园设施</a></li>
+				<li class="tab col s3"><a class="white-text" href="#club">学生社团</a></li>
+				<li class="tab col s3"><a class="white-text" href="#class">课堂内外</a></li>
+			</ul>
+		</div>
+		<div id="activity" class="col s12">
+			<div class="col s12">
+				<div class="news card">
+					<div class="card-content grey-text">
+						<a class="news black-text card-title" href="{{ url_for('post', title='校长致辞') }}">校长致辞</a>
+					</div>
+				</div>
+			</div>
+			<div class="col s12">
+				<div class="news card">
+					<div class="card-content grey-text">
+						<a class="news black-text card-title" href="{{ url_for('post', title='全国中学生英语学术辩论联赛在人大附中成功举行') }}">全国中学生英语学术辩论联赛在人大附中成功举行</a>
+					</div>
+				</div>
+			</div>
+			<div class="col s12">
+				<div class="news card">
+					<div class="card-content grey-text">
+						<a class="news black-text card-title" href="{{ url_for('post', title='中美交流活动') }}">中美交流活动</a>
+					</div>
+				</div>
+			</div>
+			<div class="col s12">
+				<div class="news card">
+					<div class="card-content grey-text">
+						<a class="news black-text card-title" href="{{ url_for('post', title='人大附中中外合作办学项目学生志愿服务活动简介') }}">人大附中中外合作办学项目学生志愿服务活动简介</a>
+					</div>
+				</div>
+			</div>
+			<div class="col s12">
+				<div class="news card">
+					<div class="card-content grey-text">
+						<a class="news black-text card-title" href="{{ url_for('post', title='SPARK社团') }}">SPARK社团</a>
+					</div>
+				</div>
+			</div>
+			<div class="col s12">
+				<div class="news card">
+					<div class="card-content grey-text">
+						<a class="news black-text card-title" href="{{ url_for('post', title='Talking Today 社团活动总结') }}">Talking Today 社团活动总结</a>
+					</div>
+				</div>
+			</div>
+			<div class="col s12">
+				<div class="news card">
+					<div class="card-content grey-text">
+						<a class="news black-text card-title" href="{{ url_for('post', title='赴美学生会 SEUSC') }}">赴美学生会 SEUSC</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="club" class="col s12">
+			<h5 class="red-text">夏令营</h5>
+			<img class="materialboxed responsive-img" src="{{ url_for('static', filename='img/about/culture_summercamp1.jpg') }}">
+			<img class="materialboxed responsive-img" src="{{ url_for('static', filename='img/about/culture_summercamp2.jpg') }}">
+			<img class="materialboxed responsive-img" src="{{ url_for('static', filename='img/about/culture_summercamp3.jpg') }}">
+			<img class="materialboxed responsive-img" src="{{ url_for('static', filename='img/about/culture_summercamp4.jpg') }}">
+			<h5 class="red-text">冬令营</h5>
+			<img class="materialboxed responsive-img" src="{{ url_for('static', filename='img/about/culture_wintercamp1.jpg') }}">
+			<img class="materialboxed responsive-img" src="{{ url_for('static', filename='img/about/culture_wintercamp2.jpg') }}">
+			<img class="materialboxed responsive-img" src="{{ url_for('static', filename='img/about/culture_wintercamp3.jpg') }}">
+			<img class="materialboxed responsive-img" src="{{ url_for('static', filename='img/about/culture_wintercamp4.jpg') }}">
+			<img class="materialboxed responsive-img" src="{{ url_for('static', filename='img/about/culture_wintercamp5.jpg') }}">
+			<img class="materialboxed responsive-img" src="{{ url_for('static', filename='img/about/culture_wintercamp6.jpg') }}">
+			<img class="materialboxed responsive-img" src="{{ url_for('static', filename='img/about/culture_wintercamp7.jpg') }}">
+			<img class="materialboxed responsive-img" src="{{ url_for('static', filename='img/about/culture_wintercamp8.jpg') }}">
+			<h5 class="red-text">志愿团</h5>
+			<img class="materialboxed responsive-img" src="{{ url_for('static', filename='img/about/culture_volgroup1.jpg') }}">
+			<img class="materialboxed responsive-img" src="{{ url_for('static', filename='img/about/culture_volgroup2.jpg') }}">
+			<img class="materialboxed responsive-img" src="{{ url_for('static', filename='img/about/culture_volgroup3.jpg') }}">
+			<img class="materialboxed responsive-img" src="{{ url_for('static', filename='img/about/culture_volgroup4.jpg') }}">
+			<h5 class="red-text">文学社</h5>
+			<img class="materialboxed responsive-img" src="{{ url_for('static', filename='img/about/culture_litclub1.jpg') }}">
+			<img class="materialboxed responsive-img" src="{{ url_for('static', filename='img/about/culture_litclub2.jpg') }}">
+			<img class="materialboxed responsive-img" src="{{ url_for('static', filename='img/about/culture_litclub3.jpg') }}">
+			<img class="materialboxed responsive-img" src="{{ url_for('static', filename='img/about/culture_litclub4.jpg') }}">
+		</div>
+		<div id="facility" class="col s12">
+			<br/>
+			<br/>
+			<div class="row">
+				<div class="col s3">
+					<img class="materialboxed responsive-img" src="{{ url_for('static', filename='img/about/culture_facility1.jpg') }}">
+					<p>美术教室</p>
+				</div>
+				<div class="col s3">
+					<img class="materialboxed responsive-img" src="{{ url_for('static', filename='img/about/culture_facility2.jpg') }}">
+					<p>生物实验室</p>
+				</div>
+				<div class="col s3">
+					<img class="materialboxed responsive-img" src="{{ url_for('static', filename='img/about/culture_facility3.jpg') }}">
+					<p>物理实验室</p>
+				</div>
+				<div class="col s3">
+					<img class="materialboxed responsive-img" src="{{ url_for('static', filename='img/about/culture_facility4.jpg') }}">
+					<p>虚拟实验室</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s3">
+					<img class="materialboxed responsive-img" src="{{ url_for('static', filename='img/about/culture_facility5.jpg') }}">
+					<p>网络实验室</p>
+				</div>
+				<div class="col s3">
+					<img class="materialboxed responsive-img" src="{{ url_for('static', filename='img/about/culture_facility6.jpg') }}">
+					<p>游泳馆</p>
+				</div>
+				<div class="col s3">
+					<img class="materialboxed responsive-img" src="{{ url_for('static', filename='img/about/culture_facility7.jpg') }}">
+					<p>交响乐排练厅</p>
+				</div>
+				<div class="col s3">
+					<img class="materialboxed responsive-img" src="{{ url_for('static', filename='img/about/culture_facility8.jpg') }}">
+					<p>体育馆</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s3">
+					<img class="materialboxed responsive-img" src="{{ url_for('static', filename='img/about/culture_facility9.jpg') }}">
+					<p>艺术宫</p>
+				</div>
+			</div>
+		</div>
+		<div id="class" class="col s12">
+			<p>高一2班英语课堂作业：海洋词汇库Sea Vocabulary</p>
+			<p>指导教师：陈玲</p>
+			<img class="materialboxed responsive-img" src="{{ url_for('static', filename='img/about/culture_class1.jpg') }}">
+			<p>图片1. Rachel Wang</p>
+			<img class="materialboxed responsive-img" src="{{ url_for('static', filename='img/about/culture_class2.jpg') }}">
+			<p>图片2. Sammie</p>
+			<img class="materialboxed responsive-img" src="{{ url_for('static', filename='img/about/culture_class3.jpg') }}">
+			<p>图片3. Grace Zhu</p>
+			<img class="materialboxed responsive-img" src="{{ url_for('static', filename='img/about/culture_class4.jpg') }}">
+			<p>图片4. Gloria</p>
+			<img class="materialboxed responsive-img" src="{{ url_for('static', filename='img/about/culture_class5.jpg') }}">
+			<p>图片5. Lily</p>
+			<img class="materialboxed responsive-img" src="{{ url_for('static', filename='img/about/culture_class6.jpg') }}">
+			<p>图片6. Jolan Xie</p>
+			<img class="materialboxed responsive-img" src="{{ url_for('static', filename='img/about/culture_class7.jpg') }}">
+			<img class="materialboxed responsive-img" src="{{ url_for('static', filename='img/about/culture_class8.jpg') }}">
+			<p>图片7、图片8. Emma Zhuang</p>
+			<img class="materialboxed responsive-img" src="{{ url_for('static', filename='img/about/culture_class9.jpg') }}">
+			<p>图片9. Christine</p>
+		</div>
+	</div>
+
+	<script>
+	$(document).ready(function(){
+		$('.tabs').tabs();
+		$('.materialboxed').materialbox();
+	});
+	</script>
+</div>
+{% endblock %}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>人大附中 - 中外合作办学项目</title>
+	<link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}" type="image/x-icon">
+	<link rel="stylesheet" href="{{ url_for('static', filename='bin/materialize.min.css') }}">
+	<script src="{{ url_for('static', filename='bin/jquery-3.2.1.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='bin/materialize.min.js') }}"></script>
+	<style>
+	body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  main {
+    flex: 1 0 auto;
+  }
+	
+	header>.row{
+		height: 10rem;
+	}
+	header>.title{
+		height: 8rem;
+		padding: 2.5rem 0;
+	}
+	.logo.col>.logo{
+		width: 70%;
+		margin-left: 10%;
+	}
+	h5{
+		font-size:1.4rem
+	}
+	.page-title, .title>.text{
+		font-size: 2.8rem;
+		color: #999;
+		margin-right: -0.8rem
+	}
+	.page-title{
+		font-size: 1.8rem;
+		margin: 0.4rem 0;
+	}
+	.title>.line{
+		border-bottom: 2px solid rgb(225, 2, 25);
+		width: 80%;
+		float:right;
+		margin-right: -0.6rem
+	}
+	</style>
+	{% block head %}{% endblock %}
+</head>
+<body>
+	<div class="container">
+		<header class="hide-on-med-and-down">
+			<div class="valign-wrapper row">
+				<a class="logo col m2" href="/"><img class="responsive-img logo" src="{{ url_for('static', filename='img/page_logo.jpg') }}"></a>
+				<div class="title right-align col m10">
+					<h1 class="text">人大附中中外合作办学项目</h1>
+					<div class="line"></div>
+				</div>
+			</div>
+		</header>
+		<header class="hide-on-large-only">
+			<div class="title">
+				<h1 class="page-title">人大附中中外合作办学项目</h1>
+				<div class="line"></div>
+			</div>
+		</header>
+	</div>
+		{% block content %}{% endblock %}
+	<footer class="red darken-4 page-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="white-text">人大附中中外合作办学项目</h5>
+					<p class="grey-text text-lighten-4">北京市海淀区中关村大街37号 100080</p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<h5 class="white-text">相关链接</h5>
+					<ul>
+						<li><a class="grey-text text-lighten-3" href="https://www.ibo.org">IBO 国际组织</a></li>
+						<li><a class="grey-text text-lighten-3" href="http://www.cambridgeinternational.org">剑桥大学考试委员会</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+			2018 © 中国人民大学附属中学 版权所有
+			<a class="grey-text text-lighten-4 right" href=""></a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

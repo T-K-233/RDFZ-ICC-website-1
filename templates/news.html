@@ -1,0 +1,24 @@
+{% extends 'BASE.html' %}
+{% block content %}
+<div class="container">
+	<section>
+		<h5 class="red-text">最新资讯</h5>
+		<div class="row">
+		{% for feed in FEEDS %}
+			<div class="col s12">
+				<div class="news card">
+					<div class="card-content grey-text">
+						<a class="news black-text card-title" href="{{ feed['url'] }}">{{ feed['title'] }}</a>
+						<p>{{ feed['date'] }}</p>
+					</div>
+				</div>
+			</div>
+		{% endfor %}
+		</div>
+	</section>
+	<script>
+	$(document).ready(function(){
+	});
+	</script>
+</div>
+{% endblock %}

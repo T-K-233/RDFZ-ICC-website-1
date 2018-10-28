@@ -1,0 +1,49 @@
+{% extends 'BASE.html' %}
+{% block content %}
+<div class="container">
+	<h4 class="red-text">录取情况</h4>
+	<ul class="collapsible">
+		{% for year_result in DATA | reverse %}
+		<li>
+			<div class="red-text collapsible-header">{{ 2018 - loop.index0 }}</div>
+			<div class="collapsible-body">
+			{% for row in year_result %}
+				{% if row|length == 1 %}
+					<h6 class="grey-text header">{{ row[0] }}</h6>
+				{% else %}
+					<p>{{row[0]}} - {{row[1]}}</p>
+				{% endif %}
+			{% endfor %}
+			</div>
+		</li>
+		{% endfor %}
+	</ul>
+	<h4 class="red-text">获奖情况</h4>
+	<ul class="collapsible">
+		<li>
+			<div class="red-text collapsible-header">2015</div>
+			<div class="collapsible-body">
+				<p>来自人大附中中外合作办学项目的杨婧、张巨见、靳天星、刘凯歌四名同学组成人大附中代表队，荣获首届（中学生）国际数学建模邀请赛北京赛区一等奖。</p>
+				<p>在2015年4月4日美国明尼苏达大学落幕的第26届FRC机器人比赛中，我校学生凭借机器人设计、工程答辩、商业计划、队伍宣传及场地比赛等方面的出色表现，获得了新秀启迪奖。此项赛事由美国非盈利组织FIRST主办，是美国主流机器人比赛JrFLL、FLL、FTC、FRC中级别最高的比赛。其中人大附中中外合作办学项目的夏闻燕同学作为学生代表参赛。</p>
+			</div>
+		</li>
+		<li>
+			<div class="red-text collapsible-header">2014</div>
+			<div class="collapsible-body">
+				<p>宋景晖同学在2014年剑桥国际AS Level数学考试中，获全球最高分</p>
+				<p>张雨辰同学在2014年剑桥国际AS Level数学考试中，获全球最高分</p>
+				<p>张雨辰同学在2014年剑桥国际IGCSE英语第二语言考试中，获中国区最高分</p>
+				<p>刘云昊同学在2014年剑桥国际AS Level商学考试中，获中国区最高分</p>
+				<p>顾蓝天同学在2014年剑桥国际A Level音乐考试中，获中国区最高分</p>
+				<p>王垚同学在2014年剑桥国际IGCSE生物考试中，获中国区最高分</p>
+			</div>
+		</li>
+	</ul>
+	
+	<script>
+		$(document).ready(function(){
+			$('.collapsible').collapsible();
+		})
+	</script>
+</div>
+{% endblock %}
